@@ -1,4 +1,4 @@
-# CDC Departure
+# CDC
 
 Emigrate to the Wenex ecosystem with [CDC](https://www.confluent.io/learn/change-data-capture/) and [Kafka Connect](https://docs.confluent.io/platform/current/connect/index.html) from your old-fashioned SQL DBMS to the NoSQL solution of Wenex with MongoDB, this is an example project to do it.
 
