@@ -6,10 +6,10 @@ Emigrate to the Wenex ecosystem with [CDC](https://www.confluent.io/learn/change
 
 Before each please be sure to have the prerequisites:
 
-- [ReplicaSet MongoDB](https://github.com/wenex-org/cdc-departure/tree/main/mongo-rs)
+- [ReplicaSet MongoDB](./mongo-rs/README.md)
 - Docker with Compose
 
-To start and run the environment enter this command `docker-compose up -d` (extends with [ReplicaSet MongoDB](https://github.com/wenex-org/cdc-departure/tree/main/mongo-rs)) in your terminal while you located into this project, after that run the command `npm run db:seed` to create `example` MySQL database and the `fortest` table with sample data, then go to the [Kafka Connect](#kafka-connect) section and register connectors.
+To start and run the environment enter this command `docker-compose up -d` (extends with [ReplicaSet MongoDB](./mongo-rs/README.md)) in your terminal while you located into this project, after that run the command `npm run db:seed` to create `example` MySQL database and the `fortest` table with sample data, then go to the [Kafka Connect](#kafka-connect) section and register connectors.
 
 Please look at your MongoDB to see the existing data in MySQL. If you want to manually sink with MongoDB start the `sql-to-nosql` app with the command `npm run start`. I guess may you want to have a bi-directional sink with MySQL, so, run the last source connector [MongoDB Source](#mongodb-source) and sink the project with the command `npm run start nosql-to-sql`.
 
